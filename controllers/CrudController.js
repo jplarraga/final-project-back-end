@@ -1,5 +1,12 @@
 const CrudSchema = require('../models/userModel');
 
+const welcome = async (req, res) => {
+
+    res.status(200).json({messsage: "ok"})
+  
+}
+
+
 const getAllData = async (req, res) => {
     try {
         const data = await CrudSchema.find({})
